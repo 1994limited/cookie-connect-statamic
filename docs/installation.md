@@ -38,7 +38,7 @@ Super users can always change Cookie Connect. Give a role **Choose the consent p
 
 ## Where settings are kept
 
-Each site's settings are saved as `resources/cookie-connect/{site}.yaml`, so they're versioned with your content. The addon settings are in `resources/addons/cookie-connect.yaml`, like any addon's.
+Each site's settings are saved as `resources/cookie-connect/{site}.yaml`, so they're versioned with your content. The addon settings are in `resources/addons/cookie-connect-statamic.yaml`, like any addon's.
 
 ## Updating
 
