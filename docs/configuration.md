@@ -67,6 +67,6 @@ If your CSP uses nonces, give Cookie Connect a function that returns this reques
 'nonce' => fn () => csp_nonce(),
 ```
 
-Full static caching and nonces don't mix (a cached page carries an old nonce). Use hashes instead: `{{ consent:hashes }}` gives the `'sha256-…'` sources for the inline scripts Cookie Connect printed, for your policy header. They only change when the settings do.
+Full static caching and nonces don't mix (a cached page carries an old nonce). Use hashes instead: `{{ consent:hashes }}` gives the `'sha256-…'` sources for Cookie Connect's own inline scripts (the defaults, its script, Google's tags and the Control Panel's scripts), worked out even before they're added to the page, plus inline scripts held back with the consent tag earlier in the template. They only change when the settings do. Inline scripts held back after it aren't included: give them a nonce, or move them to files.
 
 Your platform's own domains need allowing too; see its CSP documentation.

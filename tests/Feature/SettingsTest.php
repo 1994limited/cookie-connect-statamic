@@ -72,6 +72,15 @@ class SettingsTest extends TestCase
         $this->assertSame(['google', 'google.gtmId'], app(SiteSettings::class)->overridden(Site::default()));
     }
 
+    public function test_values_fixed_in_config_are_not_saved(): void
+    {
+        config(['cookie-connect.sites' => ['*' => ['google' => ['gtmId' => 'GTM-XYZ9876']]]]);
+        $this->cookiebot(['google' => ['gtmId' => 'GTM-XYZ9876']]);
+
+        $this->assertArrayNotHasKey('gtmId', app(SiteSettings::class)->stored(Site::default())['google']);
+        $this->assertSame('GTM-XYZ9876', app(SiteSettings::class)->forSite(Site::default())->google->gtmId);
+    }
+
     public function test_the_nonce_comes_from_config(): void
     {
         $this->cookiebot();

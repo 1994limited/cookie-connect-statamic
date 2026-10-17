@@ -57,7 +57,7 @@ Categories default to OneTrust's own group IDs: preferences → `C0003`, analyti
 
 - **Website key**: Advanced Settings → Get Installation Code.
 
-CookieYes marks only scripts that load a file (`data-cookieyes`), one category each; Cookie Connect holds back everything else itself. In advanced Consent Mode Google's tags go before CookieYes, in basic mode after it, as CookieYes asks. Turn on **Support GCM** in CookieYes so it sends Consent Mode updates.
+CookieYes's own markup (`data-cookieyes`) leaves scripts runnable if CookieYes fails to load, so Cookie Connect holds back everything itself and releases it from CookieYes's consent. In advanced Consent Mode Google's tags go before CookieYes, in basic mode after it, as CookieYes asks. Turn on **Support GCM** in CookieYes so it sends Consent Mode updates.
 
 ## iubenda
 

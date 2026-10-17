@@ -98,7 +98,8 @@ class SiteSettings
     {
         $validator = new Validator(Providers::default());
         $normalised = $validator->normalise(CoreSettings::fromArray($data));
-        $saved = array_intersect_key($normalised->toArray(), array_flip(self::KEYS));
+        // What config fixes isn't saved: it may differ per environment.
+        $saved = CoreSettings::without(array_intersect_key($normalised->toArray(), array_flip(self::KEYS)), $this->overridden($site));
 
         $merged = array_replace_recursive($saved, $this->overrides($site));
 
