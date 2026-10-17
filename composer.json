@@ -1,0 +1,73 @@
+{
+    "name": "1994/cookie-connect-statamic",
+    "description": "Connects Statamic to the cookie consent platform you already use (Cookiebot, Usercentrics, OneTrust, CookieYes, iubenda, Termly, CookieFirst, Cookie-Script or any other): paste its ID in the Control Panel, get Google Consent Mode v2 in the right order, and mark scripts that need consent the same way whichever platform is behind it.",
+    "type": "statamic-addon",
+    "license": "proprietary",
+    "keywords": [
+        "statamic",
+        "statamic-addon",
+        "cookie consent",
+        "cookiebot",
+        "onetrust",
+        "usercentrics",
+        "consent mode",
+        "gdpr"
+    ],
+    "authors": [
+        {
+            "name": "1994",
+            "email": "hello@1994.co.uk",
+            "homepage": "https://1994.co.uk"
+        }
+    ],
+    "support": {
+        "email": "hello@1994.co.uk"
+    },
+    "autoload": {
+        "psr-4": {
+            "NineteenNinetyFour\\CookieConnect\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NineteenNinetyFour\\CookieConnect\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^8.3",
+        "1994/cookie-connect-core": "^1.0",
+        "statamic/cms": "^6.35"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.20",
+        "orchestra/testbench": "^10.0|^11.0",
+        "phpunit/phpunit": "^12.0"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../cookie-connect-core"
+        }
+    ],
+    "extra": {
+        "statamic": {
+            "name": "Cookie Connect",
+            "description": "Connects your site to the cookie consent platform you already use: paste its ID, get Google Consent Mode v2 in the right order, and hold back scripts the same way whichever platform is behind it.",
+            "developer": "1994",
+            "developer-url": "https://1994.co.uk"
+        },
+        "laravel": {
+            "providers": [
+                "NineteenNinetyFour\\CookieConnect\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
