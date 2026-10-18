@@ -1,6 +1,6 @@
 {
     "name": "1994/cookie-connect-statamic",
-    "description": "Connects Statamic to the cookie consent platform you already use (Cookiebot, Usercentrics, OneTrust, CookieYes, iubenda, Termly, CookieFirst, Cookie-Script or any other): paste its ID in the Control Panel, get Google Consent Mode v2 in the right order, and mark scripts that need consent the same way whichever platform is behind it.",
+    "description": "Connect your site to the cookie consent platform you already use: paste its ID, and get Google Consent Mode v2 in the right order.",
     "type": "statamic-addon",
     "license": "proprietary",
     "keywords": [
@@ -46,7 +46,7 @@
     "extra": {
         "statamic": {
             "name": "Cookie Connect",
-            "description": "Connects your site to the cookie consent platform you already use: paste its ID, get Google Consent Mode v2 in the right order, and hold back scripts the same way whichever platform is behind it.",
+            "description": "Connect your site to the cookie consent platform you already use: paste its ID, and get Google Consent Mode v2 in the right order.",
             "developer": "1994",
             "developer-url": "https://1994.co.uk"
         },

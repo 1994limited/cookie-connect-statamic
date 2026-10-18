@@ -19,7 +19,7 @@ use Statamic\Providers\AddonServiceProvider;
 class ServiceProvider extends AddonServiceProvider
 {
     /** The Control Panel nav icon (resources/brand/nav-icon.svg). */
-    public const ICON = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"><path d="M7 .75a6.25 6.25 0 1 0 6.25 6.25 1.75 1.75 0 0 1-1.9-1.75 1.75 1.75 0 0 1-1.85-1.85A1.75 1.75 0 0 1 7.75 1.5 1.1 1.1 0 0 1 7 .75Z" stroke="currentColor" stroke-linejoin="round"/><circle cx="4.5" cy="5.5" r=".75" fill="currentColor"/><circle cx="8.5" cy="8.5" r=".75" fill="currentColor"/><circle cx="5" cy="9.5" r=".6" fill="currentColor"/></svg>';
+    public const ICON = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"><path d="M7 1.6A5.6 5.6 0 1 0 12.6 7.2 3.3 3.3 0 0 1 8.95 3.75 3.3 3.3 0 0 1 7 1.6Z" stroke="currentColor" stroke-width="1" stroke-linejoin="round"></path><path d="M10.4 1.4H12.6V3.6Z" stroke="currentColor" stroke-width="1" stroke-linejoin="round"></path><circle cx="4.7" cy="5.6" r=".75" fill="currentColor"></circle><circle cx="8.4" cy="8.8" r=".75" fill="currentColor"></circle><circle cx="5.1" cy="9.7" r=".55" fill="currentColor"></circle></svg>';
 
     public const PERMISSION = 'manage cookie connect';
 
