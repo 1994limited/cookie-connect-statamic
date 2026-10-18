@@ -4,6 +4,12 @@ Connect your Statamic site to the cookie consent platform you already pay for. C
 
 It works with Cookiebot, Usercentrics, OneTrust, CookieYes, iubenda, Termly, CookieFirst and Cookie-Script, or any other platform through Custom. It doesn't draw a banner of its own: your platform does that.
 
+| Choose the platform, paste its ID | Scripts held back until consent | Before and after consent |
+| --- | --- | --- |
+| ![The Cookie Connect page with Cookiebot chosen](docs/images/control-panel.png) | ![A Hotjar script added in the Scripts list](docs/images/control-panel-scripts.png) | ![A video held back behind a placeholder until marketing cookies are allowed](docs/images/site-before.png) |
+
+The screenshots are from Dog-ear Books, a made-up bookshop (see [the demo](docs/demo.md)). Its banner is a pretend consent platform for trying Cookie Connect without an account; on your site, it's your platform's own banner.
+
 ## Features
 
 - **Paste an ID, done.** Pick the platform, paste the ID or the whole snippet your platform gives you (Cookie Connect takes the ID out of it), save. Nothing to add to your templates: it puts itself into every page.

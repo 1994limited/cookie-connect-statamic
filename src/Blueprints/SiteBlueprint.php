@@ -273,7 +273,7 @@ class SiteBlueprint
         }
 
         $checked = e(__('Checked against :platform’s documentation on :date.', ['platform' => $provider->name, 'date' => $provider->verified]));
-        $link = $provider->docs === [] ? '' : ' <a href="'.e($provider->docs[0]).'" target="_blank" rel="noopener">'.e(__('Their docs')).'</a>';
+        $link = $provider->docs === [] ? '' : ' <a style="text-decoration: underline" href="'.e($provider->docs[0]).'" target="_blank" rel="noopener">'.e(__('Their docs')).'</a>';
 
         return '<div class="text-sm text-gray-700 dark:text-gray-400 space-y-1">'.$html.'<p class="text-gray-500">'.$checked.$link.'</p></div>';
     }

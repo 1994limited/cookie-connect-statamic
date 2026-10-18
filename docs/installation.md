@@ -18,6 +18,8 @@ composer require 1994/cookie-connect-statamic
 3. Optionally, add your Google Tag Manager container or Google Analytics 4 measurement ID (see [Google tags](google.md)).
 4. Save. The box at the top says whether the platform is live.
 
+![The Cookie Connect page with Cookiebot chosen and live](images/control-panel.png)
+
 You don't need to change your templates: Cookie Connect puts itself straight after `<head>` on every front-end page.
 
 ## Where it runs
