@@ -68,6 +68,18 @@ class ControlPanelTest extends TestCase
         $this->assertSame(['analytics'], $stored['scripts'][0]['categories']);
     }
 
+    public function test_every_google_setting_fixed_in_config_is_read_only(): void
+    {
+        $this->signIn(['manage cookie connect']);
+        config(['cookie-connect.sites' => ['*' => ['google' => ['gtmSetsDefaults' => true, 'adsDataRedaction' => false, 'urlPassthrough' => true, 'waitForUpdate' => 900, 'gtmId' => 'GTM-AB12CD3']]]]);
+
+        $fields = collect($this->getJson(cp_route('cookie-connect.edit', 'default'))->json('blueprint.tabs.0.sections.1.fields'))->keyBy('handle');
+
+        foreach (['google_gtm_sets_defaults', 'google_ads_data_redaction', 'google_url_passthrough', 'google_wait_for_update', 'google_gtm_id'] as $handle) {
+            $this->assertTrue($fields[$handle]['read_only'] ?? false, $handle);
+        }
+    }
+
     public function test_none_clears_the_platform(): void
     {
         $this->signIn([], super: true);

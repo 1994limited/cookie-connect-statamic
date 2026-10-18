@@ -57,6 +57,16 @@ class InjectionTest extends TestCase
         $this->assertStringContainsString('<!-- Cookie Connect -->', $this->through(response('<html><head></head><body></body></html>')));
     }
 
+    public function test_headers_describing_the_old_body_are_dropped(): void
+    {
+        $this->cookiebot();
+        $response = response('<html><head></head><body></body></html>', 200, ['Content-Length' => '40', 'ETag' => '"abc"']);
+        (new InjectCookieConnect)->handle(Request::create('/x'), fn () => $response);
+
+        $this->assertFalse($response->headers->has('Content-Length'));
+        $this->assertFalse($response->headers->has('ETag'));
+    }
+
     public function test_a_page_already_carrying_the_head_tag_gets_it_once(): void
     {
         $this->cookiebot();

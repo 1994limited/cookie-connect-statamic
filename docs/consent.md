@@ -103,7 +103,7 @@ On its own:
 
 ## The modifier
 
-For HTML in a field (an embed code field, say):
+For HTML in a field you trust (an embed code field, say). Like Antlers itself, it prints the value as HTML, so don't use it on anything a visitor can set:
 
 ```antlers
 {{ embed_code | consent:marketing }}

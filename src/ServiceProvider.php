@@ -44,8 +44,9 @@ class ServiceProvider extends AddonServiceProvider
 
         $this->mergeConfigFrom(__DIR__.'/../config/cookie-connect.php', 'cookie-connect');
 
-        $this->app->singleton(Settings::class);
-        $this->app->singleton(SiteSettings::class);
+        // Per request, so long-lived workers (Octane) pick up saved changes.
+        $this->app->scoped(Settings::class);
+        $this->app->scoped(SiteSettings::class);
         $this->app->scoped(Output::class);
     }
 

@@ -30,6 +30,13 @@ class InjectCookieConnect
             return $response;
         }
 
-        return $response->setContent(app(Output::class)->inject($content));
+        $response->setContent(app(Output::class)->inject($content));
+
+        // The body changed: headers describing the old one would be wrong.
+        $response->headers->remove('Content-Length');
+        $response->headers->remove('ETag');
+        $response->headers->remove('Content-MD5');
+
+        return $response;
     }
 }

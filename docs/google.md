@@ -42,4 +42,4 @@ In Tag Manager, a Custom Event trigger on `cookie_connect_update` fires after ea
 
 ## Other addons and templates
 
-If another addon or your layout already adds Google Tag Manager or gtag.js, keep Google's tags in one place. Cookie Connect never adds a tag whose ID is already on the page, whoever put it there, so the same container never loads twice; it adds a comment saying so. Its Consent Mode defaults and your platform still come first, because Cookie Connect goes straight after `<head>`.
+If another addon or your layout already adds Google Tag Manager or gtag.js, keep Google's tags in one place. When Cookie Connect adds itself to pages (the default), it never adds a tag whose ID a script on the page already loads, whoever put it there, so the same container never loads twice; it adds a comment saying so. If you place `{{ consent:head }}` yourself, it can't see the rest of the page: keep Google's tags in one place. Its Consent Mode defaults and your platform still come first, because Cookie Connect goes straight after `<head>`.

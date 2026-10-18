@@ -14,7 +14,7 @@ It works with Cookiebot, Usercentrics, OneTrust, CookieYes, iubenda, Termly, Coo
 - **One JavaScript API.** `CookieConnect.has('analytics')`, `CookieConnect.on('change', …)` and a `cookieconnect:change` event, the same whichever platform fired it.
 - **Each site its own platform** on multisite, or fixed in `config/cookie-connect.php` with environment variables.
 - **Off on dev and staging.** The platform only loads in the environments you choose. Elsewhere, content that needs consent stays blocked (or runs, to test your tags).
-- **Plays well with others.** If another addon or your layout already adds Google Tag Manager, Cookie Connect doesn't add it again. Works with half and full static caching, and with a Content Security Policy (nonces or hashes).
+- **Plays well with others.** If another addon or your layout already adds Google Tag Manager, Cookie Connect doesn't add it again (when it adds itself to pages). Works with half and full static caching, and with a Content Security Policy (nonces or hashes).
 
 ## Requirements
 
