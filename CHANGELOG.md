@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.0.0 - 2026-10-18
 
 ### Added
 - Cookiebot, Usercentrics, OneTrust, CookieYes, iubenda, Termly, CookieFirst, Cookie-Script and Custom, chosen per site under Tools → Cookie Connect, with IDs taken out of pasted snippets.
