@@ -43,12 +43,6 @@
         "orchestra/testbench": "^10.0|^11.0",
         "phpunit/phpunit": "^12.0"
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../cookie-connect-core"
-        }
-    ],
     "extra": {
         "statamic": {
             "name": "Cookie Connect",
@@ -68,6 +62,6 @@
             "pixelfear/composer-dist-plugin": true
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
