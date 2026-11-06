@@ -60,9 +60,9 @@ Where a platform has no markup for something (CookieYes and inline scripts, User
 
 ## A placeholder
 
-![A video held back behind a placeholder, and the same page once marketing cookies are allowed](images/site-before.png)
+![A video held back behind a placeholder, and the same page once marketing cookies are allowed](https://raw.githubusercontent.com/1994limited/statamic-marketplace/main/cookie-connect/charts/site-before.png)
 
-![The video plays once marketing cookies are allowed; analytics stays off](images/site-after.png)
+![The video plays once marketing cookies are allowed; analytics stays off](https://raw.githubusercontent.com/1994limited/statamic-marketplace/main/cookie-connect/charts/site-after.png)
 
 Show a message in place of a held-back embed, with a button that opens the cookie settings:
 
@@ -127,7 +127,7 @@ For HTML in a field you trust (an embed code field, say). Like Antlers itself, i
 
 Under **Scripts** on the Cookie Connect page, add a script with:
 
-![A Hotjar script in the Scripts list, needing analytics](images/control-panel-scripts.png)
+![A Hotjar script in the Scripts list, needing analytics](https://raw.githubusercontent.com/1994limited/statamic-marketplace/main/cookie-connect/charts/control-panel-scripts.png)
 
 
 - a **name**, so you can find it again;

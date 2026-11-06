@@ -6,7 +6,7 @@ It works with Cookiebot, Usercentrics, OneTrust, CookieYes, iubenda, Termly, Coo
 
 | Choose the platform, paste its ID | Scripts held back until consent | Before and after consent |
 | --- | --- | --- |
-| ![The Cookie Connect page with Cookiebot chosen](docs/images/control-panel.png) | ![A Hotjar script added in the Scripts list](docs/images/control-panel-scripts.png) | ![A video held back behind a placeholder until marketing cookies are allowed](docs/images/site-before.png) |
+| ![The Cookie Connect page with Cookiebot chosen](https://raw.githubusercontent.com/1994limited/statamic-marketplace/main/cookie-connect/charts/control-panel.png) | ![A Hotjar script added in the Scripts list](https://raw.githubusercontent.com/1994limited/statamic-marketplace/main/cookie-connect/charts/control-panel-scripts.png) | ![A video held back behind a placeholder until marketing cookies are allowed](https://raw.githubusercontent.com/1994limited/statamic-marketplace/main/cookie-connect/charts/site-before.png) |
 
 The screenshots are from Dog-ear Books, a made-up bookshop (see [the demo](docs/demo.md)). Its banner is a pretend consent platform for trying Cookie Connect without an account; on your site, it's your platform's own banner.
 
